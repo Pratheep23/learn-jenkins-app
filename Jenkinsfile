@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             agent {
                 docker {
-                    image 'node:18-apline'
+                    image 'node:18-alpine'
                     reuseNode true
                 }
             } //'npm ci' is basically 'npm install' but it has been specifically designed for cont integration servers
